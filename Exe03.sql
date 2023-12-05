@@ -1,6 +1,7 @@
 CREATE DATABASE db_generation_game_online;
 USE db_generation_game_online;
 
+
 CREATE TABLE tb_classes(
 id BIGINT AUTO_INCREMENT,
 lugar VARCHAR(25) NOT NULL,
