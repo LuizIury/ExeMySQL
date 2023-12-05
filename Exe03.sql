@@ -1,6 +1,7 @@
 CREATE DATABASE db_generation_game_online;
 USE db_generation_game_online;
 
+
 CREATE TABLE tb_classes(
 id BIGINT AUTO_INCREMENT,
 lugar VARCHAR(25) NOT NULL,
@@ -47,7 +48,11 @@ VALUES ("Lucian", 1800, 800, "AD", 1),
 UPDATE tb_personagens SET PoderDeAtaque = 1800 WHERE Id = 1;
 UPDATE tb_personagens SET PoderDeAtaque = 600 WHERE Id = 4;
 
+<<<<<<< HEAD
 SELECT nome, PoderDeAtaque, PoderDeDefesa, tb_classes.lugar, tb_classes.sexo
 FROM tb_personagens INNER JOIN tb_classes
 ON tb_personagens.classes_id = tb_classes.id;
 
+=======
+SELECT * FROM tb_personagens WHERE nome LIKE "%c%";
+>>>>>>> 822ed291964b5b740770fdfb3d7fa32b7b17bc7c
